@@ -33,7 +33,7 @@ public class NetStorageException extends RequestSigningException {
     }
 
     public NetStorageException(Throwable cause) {
-        super(cause);
+        this(cause.getMessage(),cause);
     }
 
 	public NetStorageException(String message, int responseCode) {
